@@ -3,7 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - master
+  pull_request:
+    branches:
+      - master  # master 브랜치로 풀 리퀘스트 시 실행       
 
 jobs:
   build-and-deploy:
