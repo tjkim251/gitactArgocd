@@ -4,11 +4,12 @@ metadata:
   name: hello-world
   namespace: argocd 
 spec:
-  type: LoadBalancer
+  #type: LoadBalancer
+  type: NodePort
   selector:
     app: hello-world
   ports:
   - protocol: TCP
     port: 80
     targetPort: 80
-
+    nodePort: 30007
