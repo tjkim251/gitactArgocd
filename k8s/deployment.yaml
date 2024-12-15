@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: tjkim251/hello-world:a9d58dd6010ebeb2cd52fabd2320c98f4076244c
+        image: tjkim251/hello-world:162f2ad286670a2668e850098cc8073f68f92868
         ports:
         - containerPort: 80
 
